@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to create a website using HTML and CSS</title>
+<style>
+    p{
+        padding: 0;
+        margin: 0;
+        }
+        
+        header{
+        height: 45px;
+        }
+        header nav ul{
+        display: flex;
+        margin-left: 70%;
+        list-style: none;
+        }
+        
+        header nav ul li{
+        padding-left: 10%;
+        }
+        
+        header a{
+        text-decoration: none;
+        color: brown;
+        
+        }
+        
+        section{
+        height: 100vh;
+        border: 1px solid grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        
+        
+        
+        .Container img{
+        height: 300px;
+        border-radius: 50%;
+        }
+        
+        .Container h2{
+        margin-top: 2%;
+        font-size: 3em;
+        font-family: cursive;
+        }
+        .Container p, ul{
+        margin-top: 2%;
+        font-size: 1.5rem;
+        }
+        
+        footer {
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        }
+        #intro {
+            background-image: url(pinkbg.jpg);
+            background-repeat: round;
+            }
+            #about{
+            background-color: bisque;
+            }
+            #contact{
+            background-color: blanchedalmond;
+            }
+            .bg{
+                background-image: url('./octbg.jpg');
+                background-size: cover;
+                height: 100vh;
+            }
+            .c{
+                color: aliceblue;
+                font-family: cursive;
+            }
+            </style>
+</head>
+<body class="bg">
+<header>
+<nav>
+<ul>
+<li><button class="btn btn-primary button" onclick="display('section1')">
+    Home </button></li>
+<li><button class="btn btn-primary button" onclick="display('sectionabout')">
+   about  </button></li>
+<li><button class="btn btn-primary button" onclick="display('sectiona4')">
+    contact </button></li>
+</ul>
+</nav>
+</header>
+<main>
+    <div id="section1">
+
+<div class="Container c">
+    <center>
+<img src="octopus.jpg" alt="display picture of doggo" >
+<h2>Hi im AJAY </h2>
+<button class="btn btn-primary button" onclick="display('sectionabout')">
+    next </button>
+    </center>
+</div> 
+
+</div>
+
+<div id="sectionabout">
+<div class="container c">
+<h1>About Me</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, similique?</p>
+<ul>
+<li>intermediate Qualified</li>
+<li>SSC: Completed high school education from KKR gowtham concept school from 2019 to 2020, where I learned the fundamentals of various subjects and developed a passion for problem-solving.</li>
+            <li>BIE: Pursued intermediate education at tirumal  from 2020 to 2022, focusing on advanced topics in science and mathematics, laying a strong foundation for further studies and career pursuits.</li>
+</ul>
+<button class="btn btn-primary button" onclick="display('section3')">
+    next </button>
+</div>
+</div>
+<div id="section3">
+<div class="container c">
+<h1>Contact me</h1>
+<p>SRM university ap ,neerukonda,guntur,522502.</p>
+<ul>
+    <div class="details-section">
+        <h2>Social Media:</h2>
+        <img src="insta.jpg" height="20px"><a  href="https://www.instagram.com/masood_1_4_._/">ajaykarthik_100</a>
+    <br>   <img src="mail.jpg "height="20px"><a href="ajaykarthik6036@gmail.com">ajaykarthik@gmail.com</a>
+  <br>  <img src="limk.png" height="20px"><a href="https://www.linkedin.com/in/kunjam-ajay-kartheek-dora-889344247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">linkedin</a>
+    </div> 
+</ul>
+</div>
+</div>
+<div class="container c">
+<div id="sectiona4">
+    <u>
+<li>Contact: 6303773233</li>
+   <li> landline:18000 983646</li>
+  <li>mail:ajaykarthik6035@gmail.com</li>
+  <button type="button" onclick="document.getElementById('demo').style.display='block'"> additional information </button>
+</div>
+<p id="demo" style="display:none">
+  Hi im Ajay! It's great to hear about my interests in taking reels and photographs. Being a Gemini and an extrovert, I likely have a natural knack for creativity and socializing, which are excellent qualities for photography and creating engaging content. For reels, I can explore trending topics, showcase your personality, and experiment with different editing techniques to make your videos stand out. When it comes to photography, try capturing a variety of subjects and moments, and I don't be afraid to explore different angles and lighting conditions. Keep practicing, and I'll continue to improve and develop your unique style!
+</p>
+</u>
+</div>
+</div>
+
+</main>
+<footer>
+<p class="c">© Copyright 2024 Octopus Co LTd.</p>
+</footer>
+<script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
